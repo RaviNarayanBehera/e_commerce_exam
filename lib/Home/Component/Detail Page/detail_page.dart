@@ -32,9 +32,10 @@ class _detail_pageState extends State<detail_page> {
             GestureDetector(
               onTap: () {
                 setState(() {
-                  // Navigator.of(context).pushNamed('/cart');
+
                   // cartlist.removeAt(firstList[selectedindex]);
                   cartlist.add(firstList[selectedindex]);
+                  Navigator.of(context).pushNamed('/cart');
                 });
               },
               child: Container(
